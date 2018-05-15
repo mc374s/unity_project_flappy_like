@@ -16,7 +16,7 @@ public class BlockScript : MonoBehaviour {
 	}
 
     void OnTriggerEnter2D(Collider2D collision) {
-        if(collision.tag=="OBSTACLE") {
+        if(collision.tag == "PALYER") {
             GetComponent<AudioSource>().Play();
         }
     }
