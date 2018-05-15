@@ -337,10 +337,10 @@ GameObject:
   - component: {fileID: 533882499}
   - component: {fileID: 533882498}
   - component: {fileID: 533882497}
-  - component: {fileID: 533882502}
-  - component: {fileID: 533882501}
   - component: {fileID: 533882500}
   - component: {fileID: 533882503}
+  - component: {fileID: 533882501}
+  - component: {fileID: 533882502}
   m_Layer: 0
   m_Name: player_fly_f01
   m_TagString: PLAYER
@@ -463,7 +463,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

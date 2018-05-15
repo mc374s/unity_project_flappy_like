@@ -30,13 +30,15 @@ public class PlayerScript : MonoBehaviour {
         //    rigidbody2D.velocity = Vector2.zero;
         //}
 	}
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "WALL" || collision.tag == "OBSTACLE")
-        {
+    void OnTriggerEnter2D(Collider2D collision)  {
+        if (collision.tag == "WALL"){
             //isDead = true;
             StartCoroutine("Die");
         }
+        //if(collision.tag == "OBSTACLE") {
+        //    //StartCoroutine("HitBack");
+        //    rigidbody2D.AddForce(hitbackForce);
+        //}
     }
 
     IEnumerator Die()
@@ -46,5 +48,10 @@ public class PlayerScript : MonoBehaviour {
         yield return new WaitForSeconds(1.0f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+    //IEnumerator HitBack()
+    //{
+    //    Debug.Log("Hit back!");
+    //    yield return new WaitForSeconds(1.0f);
+    //}
 
 }
