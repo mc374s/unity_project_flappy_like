@@ -17,4 +17,12 @@ public class ObstacleScript : MonoBehaviour {
 	void Update () {
 		
 	}
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "BORDER")
+        {
+            Destroy(gameObject, 0.0f);
+        }
+    }
+
 }

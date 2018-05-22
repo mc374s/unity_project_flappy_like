@@ -53,9 +53,12 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\BlockScript.cs" />
      <Compile Include="Assets\Scripts\GenarateScript.cs" />
+     <Compile Include="Assets\Scripts\HPScript.cs" />
      <Compile Include="Assets\Scripts\ObstacleScript.cs" />
      <Compile Include="Assets\Scripts\PickUpScript.cs" />
+     <Compile Include="Assets\Scripts\PivotOfPandulumScript.cs" />
      <Compile Include="Assets\Scripts\PlayerScript.cs" />
+     <Compile Include="Assets\Scripts\SceneTitleScript.cs" />
      <Compile Include="Assets\Scripts\ScoreScript.cs" />
      <None Include="Assets\Sprite Pack #1 - Tap and Fly\!Readme.txt" />
  <Reference Include="UnityEngine.UI">

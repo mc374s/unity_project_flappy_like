@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class BlockScript : MonoBehaviour {
 
+    private AudioSource audioHitted;
 
 	// Use this for initialization
 	void Start () {
-		
+        audioHitted = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -15,9 +16,9 @@ public class BlockScript : MonoBehaviour {
 		
 	}
 
-    void OnTriggerEnter2D(Collider2D collision) {
-        if(collision.tag == "PLAYER") {
-            GetComponent<AudioSource>().Play();
-        }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        audioHitted.Play();
+        HPScript.HP--;
     }
 }
